@@ -1,0 +1,30 @@
+using System;
+public class Employee
+{
+    public int id;
+    public String name;
+    public String location;
+    public Employee(int i, String n, String l)
+    {
+        id = i;
+        name = n;
+        location = l;
+    }
+    public void Display()
+    {
+
+        Console.WriteLine(id + " " + name + " " + location);
+
+    }
+}
+class TestEmployee
+{
+    public static void Main(string[] s)
+    {
+        Employee e1 = new Employee(1, "harsha", "mandya");
+        Employee e2 = new Employee(2, "rajesh", "mysore");
+        e1.Display();
+        e2.Display();
+
+    }
+}
